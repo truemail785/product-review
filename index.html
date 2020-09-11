@@ -1,0 +1,62 @@
+<title>Product Review</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="index.css">
+<body>
+	<main>
+		<div class="start">
+			<h1 id="title">A Quick survey For Our Stationay Store</h1>
+			<p id="description"><em><strong>Thank you for taking the time to help us improve the platform</strong></em></p>
+		</div>
+		<form id="survey-form">
+			<div class="form-content">
+				<label for="name" id="name-label">Name
+				<br>
+				<input id="name" type="text" name="name" placeholder="Enter Your Name" class="resize" required></label>
+				<br>
+			 	<label for="email" id="email-label">Email
+				<br>
+			 	<input id="email" type="email" name="email" placeholder="Enter Your Email Adress" class="resize" required ></label>
+			 	<br>
+			 	<label for="number" id="number-label">Age
+				<br>
+			 	<input id="number" type="number" name="age" placeholder="Enter Your Age (Optional)" class="resize" min="1" max="99"></label>
+			 	<br>
+			 	<label for="role">Which option best describes your current role? <br>
+			 	<select id="role" name= "role" class="resize">
+			 		<option default selected value>Select Your Role</option>
+			 		<option value="teacher">Teacher</option>
+			 		<option value="student">Student</option>
+			 		<option value="tourist">Tourist</option>
+			 	</select>
+			 	</label>
+			 	<br>
+			 	<label>Will You Recommend Our Shop To Your Friends?</label>
+			 	<div>
+			 	<input type="radio" name="recommend" id="definitely" value="definitely"><label for="definitely"> Definitely</label>
+			 	<input type="radio" name="recommend" id="maybe" value="maybe"><label for="maybe"> Maybe</label>
+			 	<input type="radio" name="recommend" id="not-sure" value="not-sure"><label for="not-sure"> Not Sure</label>
+			 	</div><br>
+			 	<label for="liked">What Did You Like Most In Our Shop?</label>
+			 	<select id="liked" name="liked" class="resize">
+			 		<option value="service">Service</option>
+			 		<option value="products">Products</option>
+			 		<option value="management">Management</option>
+			 		<option value="all">All Of The Above</option>
+			 	</select><br>
+			 	<label>Select Options You Would Like To See In Our Shop</label>
+			 	<div>
+			 	<input type="checkbox" name="more-products" id="more-products"><label for="more-products"> More Products</label><br>
+			 	<input type="checkbox" name="more-books" id="more-books"><label for="more-books"> More Books</label><br>
+			 	<input type="checkbox" name="more-branches" id="more-branches"><label for="more-branches"> More Branches</label><br>
+			 	<input type="checkbox" name="toys" id="toys"><label for="toys"> Make Toys Available</label><br>
+			 	<input type="checkbox" name="online-store" id="online-store"><label for="online-store"> Online Store</label><br>
+			 	<input type="checkbox" name="school-garments" id="school-garments"><label for="school-garments"> School Garments</label><br>
+			 	</div><br>
+			 	<label for="suggestions">Give Us Your Suggestions Here</label>
+			 	 <textarea  name="suggestions" id="suggestions" rows="5" cols="50" required></textarea><br>
+			 	 <button class = "resize" id="submit" style="height: 50px;"><label>Submit</label></button>
+			</div>
+
+		</form>
+	</main>
+</body>
